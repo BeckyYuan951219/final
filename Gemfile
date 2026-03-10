@@ -15,6 +15,7 @@ gem "ruby-openai"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "sqlite3", "~>2.1"
 end
 
 group :development do
@@ -22,6 +23,7 @@ group :development do
   gem "web-console"
 end
 
-# # production gems go here
-# group :production do
-# end
+# production gems go here
+group :production do
+  gem "pg"
+end
